@@ -70,3 +70,7 @@ body {
     font-size: 8px;
   }
 }
+
+footer a {
+  text-align: right;
+}
