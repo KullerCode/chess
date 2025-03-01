@@ -63,9 +63,7 @@ function deepCopyArray(array) {
   return arrayCopy;
 }
 
-setupBoardSquares();
-setupPieces();
-fillBoardSquaresArray();
+
 
 function setupBoardSquares() {
   for (let i = 0; i < boardSquares.length; i++) {
@@ -179,6 +177,9 @@ function drop(ev) {
     return;
   }
 }
+setupBoardSquares();
+setupPieces();
+fillBoardSquaresArray();
 
 function getPossibleMoves(startingSquareId, piece, boardSquaresArray) {
   const pieceColor = piece.pieceColor;
