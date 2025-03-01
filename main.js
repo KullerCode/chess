@@ -177,9 +177,7 @@ function drop(ev) {
     return;
   }
 }
-setupBoardSquares();
-setupPieces();
-fillBoardSquaresArray();
+
 
 function getPossibleMoves(startingSquareId, piece, boardSquaresArray) {
   const pieceColor = piece.pieceColor;
@@ -816,3 +814,7 @@ function showAlert(message) {
        alert.style.display="none";
   },3000);
 }
+
+setupBoardSquares();
+setupPieces();
+fillBoardSquaresArray();
